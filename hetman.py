@@ -1,4 +1,3 @@
-
 f = True
 n= int(raw_input())
 print('Maximize')
