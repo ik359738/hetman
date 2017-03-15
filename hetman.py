@@ -1,7 +1,7 @@
 
 f = True
 n= int(raw_input())
-print('Maximize:')
+print('Maximize')
 for x in range(1, n+ 1):
     for y in range(1, n+1):
         if f:
@@ -12,7 +12,7 @@ for x in range(1, n+ 1):
 
 print('')        
 print('')
-print('Subject to:')
+print('Subject to')
 
 for x in range (1,n+1):
     f = True
@@ -60,7 +60,12 @@ for s in range (-n+2, n-1):
          print 'a'+ str(x) + '_' + str(y),
     print('<= 1')    
  
-print('Bounds:') 
+print('Bounds') 
 for x in range (1,n+1):
     for y in range (1,n+1):
         print ('1 >= ' + 'a' + str(x) + '_' + str(y)+ ' >= 0')
+print('Generals')
+for x in range (1,n+1):
+    for y in range (1,n+1):
+        print('a' + str(x) + '_' + str(y))
+print ('End')        
