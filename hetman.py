@@ -1,3 +1,4 @@
+
 f = True
 n= int(raw_input())
 print('Maximize:')
@@ -7,7 +8,7 @@ for x in range(1, n+ 1):
             f = False
         else:
             print '+',
-        print 'a'+ str(x)+',' + str(y),
+        print 'a'+ str(x)+'_' + str(y),
 
 print('')        
 print('')
@@ -20,7 +21,7 @@ for x in range (1,n+1):
             f = False;
         else:
             print '+',
-        print 'a'+ str(x)+',' + str(y),
+        print 'a'+ str(x)+'_' + str(y),
     print('<= 1')
 
 for y in range (1,n+1):
@@ -30,7 +31,7 @@ for y in range (1,n+1):
             f = False;
         else:
             print '+',
-        print 'a'+ str(x)+',' + str(y),
+        print 'a'+ str(x)+'_' + str(y),
     print('<= 1')
 
 for s in range (3, 2 * n):
@@ -43,7 +44,7 @@ for s in range (3, 2 * n):
             f = False;
         else:
             print '+',
-        print 'a' + str(x) + ',' + str(y),
+        print 'a' + str(x) + '_' + str(y),
     print('<= 1')
 
 for s in range (-n+2, n-1):
@@ -56,9 +57,10 @@ for s in range (-n+2, n-1):
              f= False;
          else:
              print '+',
-         print 'a'+ str(x) + ',' + str(y),
+         print 'a'+ str(x) + '_' + str(y),
     print('<= 1')    
  
+print('Bounds:') 
 for x in range (1,n+1):
     for y in range (1,n+1):
-        print ('1 >= ' + 'a' + str(x) + ',' + str(y)+ ' >= 0')
+        print ('1 >= ' + 'a' + str(x) + '_' + str(y)+ ' >= 0')
