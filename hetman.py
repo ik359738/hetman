@@ -9,8 +9,7 @@ for x in range(1, n+ 1):
         else:
             print '+',
         print 'a'+ str(x)+'_' + str(y),
-
-print('')        
+     
 print('')
 print('Subject to')
 
